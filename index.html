@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Vrais - Consultation Ésotérique</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Astro Vrais</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#testimonials">Témoignages</a>
+                <a href="#consultation">Consultation Gratuite</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>✨ Consultation offerte</span>
+                </div>
+                <h1 class="hero-title">
+                    Votre consultation de 10 minutes 
+                    <span class="gradient-text">offerte vous attend.</span>
+                </h1>
+                <p class="hero-description">
+                    Découvrez les secrets de votre destinée avec nos voyants expérimentés Ariel et Sasha. 
+                    Une première consultation personnalisée pour révéler votre avenir.
+                </p>
+                <a href="#consultation" class="cta-button primary">
+                    Activer ma consultation gratuite
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="pexels_tarot_reading_1.jpg" alt="Consultation de tarot" class="floating">
+            </div>
+        </div>
+        <div class="particles"></div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Services Mystiques</h2>
+                <p>Explorez les différentes voies de la divination avec nos experts certifiés</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-tarot"></div>
+                    </div>
+                    <h3>Tarologie</h3>
+                    <p>Découvrez votre avenir à travers les cartes ancestrales du tarot. Nos experts révèlent les mystères de votre destinée.</p>
+                    <div class="service-features">
+                        <span>Lecture complète</span>
+                        <span>Interprétation personnalisée</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-numerology"></div>
+                    </div>
+                    <h3>Numérologie</h3>
+                    <p>Les nombres révèlent les secrets de votre personnalité et de votre destin. Percez les mystères de votre chemin de vie.</p>
+                    <div class="service-features">
+                        <span>Analyse complète</span>
+                        <span>Chemin de vie</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-astrology"></div>
+                    </div>
+                    <h3>Astrologie</h3>
+                    <p>L'influence des astres sur votre vie et vos décisions importantes. Consultez votre thème astral personnalisé.</p>
+                    <div class="service-features">
+                        <span>Thème natal</span>
+                        <span>Prévisions</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-clairvoyance"></div>
+                    </div>
+                    <h3>Médiumnité Pure</h3>
+                    <p>Communication directe avec l'au-delà pour des réponses précises. Nos médiums vous guident avec bienveillance.</p>
+                    <div class="service-features">
+                        <span>Contact spirituel</span>
+                        <span>Messages personnels</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#consultation" class="cta-button secondary">Commencer ma consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que disent nos clients</h2>
+                <p>Plus de 87 000 consultations réalisées avec satisfaction</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"Une consultation extraordinaire qui a changé ma vie. Les prédictions se sont réalisées avec une précision troublante."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_1.jpg" alt="Marie L.">
+                            <div>
+                                <h4>Marie L.</h4>
+                                <span>Paris</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"Grâce à la numérologie, j'ai enfin compris mon chemin de vie. Un moment magique et révélateur."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_2.jpg" alt="Jean-Pierre M.">
+                            <div>
+                                <h4>Jean-Pierre M.</h4>
+                                <span>Lyon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"L'astrologie m'a aidée à prendre les bonnes décisions au bon moment. Merci pour cette guidance précieuse."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_3.jpg" alt="Sophie D.">
+                            <div>
+                                <h4>Sophie D.</h4>
+                                <span>Marseille</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"Ariel a su me rassurer dans un moment difficile. Ses prédictions se sont avérées exactes."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_4.jpg" alt="Claire B.">
+                            <div>
+                                <h4>Claire B.</h4>
+                                <span>Toulouse</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"Sasha a une intuition remarquable. Elle a vu des choses que personne d'autre ne pouvait deviner."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_5.jpg" alt="Michel R.">
+                            <div>
+                                <h4>Michel R.</h4>
+                                <span>Bordeaux</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"Une expérience bouleversante. J'ai enfin trouvé les réponses que je cherchais depuis des années."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_1.jpg" alt="Isabelle M.">
+                            <div>
+                                <h4>Isabelle M.</h4>
+                                <span>Nice</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"Le professionnalisme et la bienveillance d'Ariel m'ont profondément marqué. Merci infiniment."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_2.jpg" alt="Thomas L.">
+                            <div>
+                                <h4>Thomas L.</h4>
+                                <span>Lille</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"Sasha a su me guider avec justesse dans mes choix professionnels. Tout s'est réalisé comme prévu."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_3.jpg" alt="Nathalie P.">
+                            <div>
+                                <h4>Nathalie P.</h4>
+                                <span>Strasbourg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"Une consultation qui a dépassé toutes mes attentes. La précision des détails m'a stupéfaite."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_4.jpg" alt="Valérie K.">
+                            <div>
+                                <h4>Valérie K.</h4>
+                                <span>Nantes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"Grâce à Ariel, j'ai retrouvé confiance en moi et en l'avenir. Une expérience transformatrice."</p>
+                        <div class="testimonial-author">
+                            <img src="testimonial_5.jpg" alt="Philippe D.">
+                            <div>
+                                <h4>Philippe D.</h4>
+                                <span>Rennes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="prevBtn">‹</button>
+                    <button class="slider-btn next" id="nextBtn">›</button>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#consultation" class="cta-button secondary">Je veux ma réponse personnalisée</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Confiance -->
+    <section id="trust" class="trust">
+        <div class="container">
+            <div class="trust-content">
+                <div class="trust-left">
+                    <h2>Pourquoi Nous Faire Confiance</h2>
+                    <h3>Cabinet reconnu, voyants expérimentés</h3>
+                    <p>Notre équipe de voyants professionnels Ariel et Sasha vous accompagne depuis plus de 17 ans. Reconnus pour leur don authentique et leur bienveillance, ils vous guident avec précision vers votre destinée.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">87,000+</div>
+                            <div class="stat-label">Consultations réalisées</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">17</div>
+                            <div class="stat-label">Étoiles d'or pour Ariel et Sasha</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Clients satisfaits</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Disponibilité</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trust-right">
+                    <h3>Nos garanties</h3>
+                    <div class="guarantees-accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <span class="accordion-icon">✨</span>
+                                <h4>Voyants certifiés et expérimentés</h4>
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Ariel et Sasha possèdent plus de 17 ans d'expérience dans les arts divinatoires. Ils ont été formés par les plus grands maîtres et ont développé leurs dons naturels à travers des années de pratique intensive.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <span class="accordion-icon">🔒</span>
+                                <h4>Confidentialité absolue garantie</h4>
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Toutes vos consultations sont strictement confidentielles. Nous respectons un code de déontologie strict et ne divulguons jamais vos informations personnelles ou le contenu de vos séances.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <span class="accordion-icon">🎁</span>
+                                <h4>Première consultation offerte</h4>
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Découvrez nos services sans engagement avec une consultation gratuite de 10 minutes. C'est l'occasion parfaite de faire connaissance avec nos voyants et de ressentir leur don exceptionnel.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <span class="accordion-icon">⏰</span>
+                                <h4>Disponibilité 7j/7</h4>
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Nos voyants sont disponibles tous les jours de la semaine pour répondre à vos questions urgentes. Que ce soit en journée ou en soirée, nous sommes là pour vous accompagner.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <span class="accordion-icon">💫</span>
+                                <h4>Satisfaction garantie</h4>
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Si vous n'êtes pas entièrement satisfait de votre consultation, nous nous engageons à vous rembourser intégralement. Votre satisfaction est notre priorité absolue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#consultation" class="cta-button primary">Activer ma consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Médias -->
+    <section id="media" class="media">
+        <div class="container">
+            <h3>Vu dans les médias</h3>
+            <div class="media-carousel">
+                <div class="media-track" id="mediaTrack">
+                    <img src="media_logos_fr.jpg" alt="Médias français" class="media-logo">
+                    <img src="media_logos_be.jpg" alt="Médias belges" class="media-logo">
+                    <img src="media_logos_fr.jpg" alt="Médias français" class="media-logo">
+                    <img src="media_logos_be.jpg" alt="Médias belges" class="media-logo">
+                    <img src="media_logos_fr.jpg" alt="Médias français" class="media-logo">
+                    <img src="media_logos_be.jpg" alt="Médias belges" class="media-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire -->
+    <section id="consultation" class="consultation">
+        <div class="container">
+            <div class="consultation-header">
+                <h2>Votre Consultation <span class="gradient-text">Gratuite</span></h2>
+                <p>Quelques informations pour personnaliser votre consultation</p>
+            </div>
+            
+            <div class="form-container">
+                <div class="form-progress">
+                    <div class="progress-step active" data-step="1">1</div>
+                    <div class="progress-step" data-step="2">2</div>
+                    <div class="progress-step" data-step="3">3</div>
+                    <div class="progress-step" data-step="4">4</div>
+                    <div class="progress-step" data-step="5">5</div>
+                </div>
+                
+                <form id="consultationForm" class="consultation-form">
+                    <!-- Étape 1: Email -->
+                    <div class="form-step active" data-step="1">
+                        <h3>Votre adresse email</h3>
+                        <p>Pour recevoir votre consultation personnalisée</p>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                            <span class="input-icon">📧</span>
+                        </div>
+                        <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
+                    </div>
+                    
+                    <!-- Étape 2: Nom -->
+                    <div class="form-step" data-step="2">
+                        <h3>Votre nom</h3>
+                        <p>Pour personnaliser votre consultation</p>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+                            <span class="input-icon">👤</span>
+                        </div>
+                        <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
+                    </div>
+                    
+                    <!-- Étape 3: Thématique -->
+                    <div class="form-step" data-step="3">
+                        <h3>Choisissez votre thématique</h3>
+                        <p>Quel domaine vous intéresse le plus ?</p>
+                        <div class="theme-grid">
+                            <label class="theme-card">
+                                <input type="radio" name="theme" value="sentimental" required>
+                                <div class="theme-content">
+                                    <span class="theme-icon">💕</span>
+                                    <span class="theme-label">Sentimental</span>
+                                </div>
+                            </label>
+                            <label class="theme-card">
+                                <input type="radio" name="theme" value="financier" required>
+                                <div class="theme-content">
+                                    <span class="theme-icon">💰</span>
+                                    <span class="theme-label">Financier</span>
+                                </div>
+                            </label>
+                            <label class="theme-card">
+                                <input type="radio" name="theme" value="familial" required>
+                                <div class="theme-content">
+                                    <span class="theme-icon">👨‍👩‍👧‍👦</span>
+                                    <span class="theme-label">Familial</span>
+                                </div>
+                            </label>
+                            <label class="theme-card">
+                                <input type="radio" name="theme" value="professionnel" required>
+                                <div class="theme-content">
+                                    <span class="theme-icon">💼</span>
+                                    <span class="theme-label">Professionnel</span>
+                                </div>
+                            </label>
+                        </div>
+                        <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
+                    </div>
+                    
+                    <!-- Étape 4: Date de naissance -->
+                    <div class="form-step" data-step="4">
+                        <h3>Votre date de naissance</h3>
+                        <p>Pour établir votre profil astrologique</p>
+                        <div class="form-group">
+                            <input type="date" id="birthdate" name="birthdate" required>
+                            <span class="input-icon">🎂</span>
+                        </div>
+                        <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
+                    </div>
+                    
+                    <!-- Étape 5: Téléphone -->
+                    <div class="form-step" data-step="5">
+                        <h3>Votre numéro de téléphone</h3>
+                        <p>Pour tenter de gagner une consultation exclusive avec le Président du Cabinet</p>
+                        <div class="phone-group">
+                            <select id="countryCode" name="countryCode" class="country-select">
+                                <option value="+33" selected>🇫🇷 +33</option>
+                                <option value="+32">🇧🇪 +32</option>
+                                <option value="+41">🇨🇭 +41</option>
+                                <option value="+1">🇺🇸 +1</option>
+                                <option value="+44">🇬🇧 +44</option>
+                            </select>
+                            <div class="form-group phone-input">
+                                <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required>
+                                <span class="input-icon">📞</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-btn submit-btn">Activer ma consultation gratuite</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Astro Vrais</h3>
+                    <p>Votre guide spirituel de confiance depuis 2008</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Tarologie</a></li>
+                        <li><a href="#services">Numérologie</a></li>
+                        <li><a href="#services">Astrologie</a></li>
+                        <li><a href="#services">Médiumnité Pure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@astrovrais.fr">contact@astrovrais.fr</a></li>
+                        <li><a href="tel:+33123456789">01 23 45 67 89</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
