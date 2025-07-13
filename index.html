@@ -438,38 +438,25 @@
                         <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
                     </div>
                     
-                    
-                  <!-- Étape 5: Votre question -->
-<div class="form-step" data-step="5">
-    <h3>Votre question</h3>
-    <p>Formulez votre question pour une réponse précise</p>
-    <div class="form-group">
-        <textarea id="question" name="question" placeholder="Exemple : Vais-je changer de travail bientôt ?" required></textarea>
-        <span class="input-icon">❓</span>
-    </div>
-    <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
-</div>
-
-<!-- Étape 6: Téléphone -->
-<div class="form-step" data-step="6">
-    <h3>Votre numéro de téléphone</h3>
-    <p>Pour tenter de gagner une consultation exclusive avec le Président du Cabinet</p>
-    <div class="phone-group">
-        <select id="countryCode" name="countryCode" class="country-select">
-            <option value="+33" selected>🇫🇷 +33</option>
-            <option value="+32">🇧🇪 +32</option>
-            <option value="+41">🇨🇭 +41</option>
-            <option value="+1">🇺🇸 +1</option>
-            <option value="+44">🇬🇧 +44</option>
-        </select>
-        <div class="form-group phone-input">
-            <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required>
-            <span class="input-icon">📞</span>
-        </div>
-    </div>
-    <button type="submit" class="form-btn submit-btn">Activer ma consultation gratuite</button>
-</div>
-
+                    <!-- Étape 5: Téléphone -->
+                    <div class="form-step" data-step="5">
+                        <h3>Votre numéro de téléphone</h3>
+                        <p>Pour tenter de gagner une consultation exclusive avec le Président du Cabinet</p>
+                        <div class="phone-group">
+                            <select id="countryCode" name="countryCode" class="country-select">
+                                <option value="+33" selected>🇫🇷 +33</option>
+                                <option value="+32">🇧🇪 +32</option>
+                                <option value="+41">🇨🇭 +41</option>
+                                <option value="+1">🇺🇸 +1</option>
+                                <option value="+44">🇬🇧 +44</option>
+                            </select>
+                            <div class="form-group phone-input">
+                                <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required>
+                                <span class="input-icon">📞</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-btn submit-btn">Activer ma consultation gratuite</button>
+                    </div>
                 </form>
             </div>
         </div>
