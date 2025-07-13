@@ -1,276 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro Vrais - Consultation Ésotérique</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulaire Multi-Étapes</title>
+  <style>
+    body {
+      background: #0F0F23;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      padding: 2rem;
+    }
+    .form-step {
+      display: none;
+      transition: opacity 0.3s ease;
+    }
+    .form-step.active {
+      display: block;
+    }
+    .form-btn {
+      background: linear-gradient(135deg, #8B5CF6, #EC4899);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h1>Astro Vrais</h1>
-            </div>
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#testimonials">Témoignages</a>
-                <a href="#consultation">Consultation Gratuite</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Section Hero -->
-    <section id="hero" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span>✨ Consultation offerte</span>
-                </div>
-                <h1 class="hero-title">
-                    Votre consultation de 10 minutes 
-                    <span class="gradient-text">offerte vous attend.</span>
-                </h1>
-                <p class="hero-description">
-                    Découvrez les secrets de votre destinée avec nos voyants expérimentés Ariel et Sasha. 
-                    Une première consultation personnalisée pour révéler votre avenir.
-                </p>
-                <a href="#consultation" class="cta-button primary">
-                    Activer ma consultation gratuite
-                </a>
-            </div>
-            <div class="hero-image">
-                <img src="pexels_tarot_reading_1.jpg" alt="Consultation de tarot" class="floating">
-            </div>
-        </div>
-        <div class="particles"></div>
-    </section>
+<div class="consultation-form">
+  <form id="multiStepForm">
+    <div class="form-step active">
+      <h3>Étape 1</h3>
+      <input type="text" placeholder="Nom">
+      <button type="button" class="form-btn next-btn">Suivant</button>
+    </div>
 
-    <!-- Section Services -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nos Services Mystiques</h2>
-                <p>Explorez les différentes voies de la divination avec nos experts certifiés</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <div class="icon-tarot"></div>
-                    </div>
-                    <h3>Tarologie</h3>
-                    <p>Découvrez votre avenir à travers les cartes ancestrales du tarot. Nos experts révèlent les mystères de votre destinée.</p>
-                    <div class="service-features">
-                        <span>Lecture complète</span>
-                        <span>Interprétation personnalisée</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <div class="icon-numerology"></div>
-                    </div>
-                    <h3>Numérologie</h3>
-                    <p>Les nombres révèlent les secrets de votre personnalité et de votre destin. Percez les mystères de votre chemin de vie.</p>
-                    <div class="service-features">
-                        <span>Analyse complète</span>
-                        <span>Chemin de vie</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <div class="icon-astrology"></div>
-                    </div>
-                    <h3>Astrologie</h3>
-                    <p>L'influence des astres sur votre vie et vos décisions importantes. Consultez votre thème astral personnalisé.</p>
-                    <div class="service-features">
-                        <span>Thème natal</span>
-                        <span>Prévisions</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <div class="icon-clairvoyance"></div>
-                    </div>
-                    <h3>Médiumnité Pure</h3>
-                    <p>Communication directe avec l'au-delà pour des réponses précises. Nos médiums vous guident avec bienveillance.</p>
-                    <div class="service-features">
-                        <span>Contact spirituel</span>
-                        <span>Messages personnels</span>
-                    </div>
-                </div>
-            </div>
-            <div class="section-cta">
-                <a href="#consultation" class="cta-button secondary">Commencer ma consultation</a>
-            </div>
-        </div>
-    </section>
+    <div class="form-step">
+      <h3>Étape 2</h3>
+      <input type="email" placeholder="Email">
+      <div>
+        <button type="button" class="form-btn prev-btn">Précédent</button>
+        <button type="button" class="form-btn next-btn">Suivant</button>
+      </div>
+    </div>
 
-    <!-- Section Témoignages -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Ce que disent nos clients</h2>
-                <p>Plus de 87 000 consultations réalisées avec satisfaction</p>
-            </div>
-            <div class="testimonials-slider">
-                <!-- Testimonials content here -->
-            </div>
-        </div>
-    </section>
+    <div class="form-step">
+      <h3>Étape 3</h3>
+      <input type="tel" placeholder="Téléphone">
+      <div>
+        <button type="button" class="form-btn prev-btn">Précédent</button>
+        <button type="submit" class="form-btn">Envoyer</button>
+      </div>
+    </div>
+  </form>
+</div>
 
-    <!-- Section Formulaire -->
-    <section id="consultation" class="consultation">
-        <div class="container">
-            <div class="consultation-header">
-                <h2>Votre Consultation <span class="gradient-text">Gratuite</span></h2>
-                <p>Quelques informations pour personnaliser votre consultation</p>
-            </div>
-            
-            <div class="form-container">
-                <div class="form-progress">
-                    <div class="progress-step active" data-step="1">1</div>
-                    <div class="progress-step" data-step="2">2</div>
-                    <div class="progress-step" data-step="3">3</div>
-                    <div class="progress-step" data-step="4">4</div>
-                    <div class="progress-step" data-step="5">5</div>
-                    <div class="progress-step" data-step="6">6</div>
-                </div>
-                
-                <form id="consultationForm" class="consultation-form">
-                    <!-- Étape 1: Email -->
-                    <div class="form-step active" data-step="1">
-                        <h3>Votre adresse email</h3>
-                        <p>Pour recevoir votre consultation personnalisée</p>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
-                            <span class="input-icon">📧</span>
-                        </div>
-                        <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
-                    </div>
-                    
-                    <!-- Étape 2: Nom -->
-                    <div class="form-step" data-step="2">
-                        <h3>Votre nom</h3>
-                        <p>Pour personnaliser votre consultation</p>
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
-                            <span class="input-icon">👤</span>
-                        </div>
-                        <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
-                    </div>
-                    
-                    <!-- Étape 3: Thématique -->
-                    <div class="form-step" data-step="3">
-                        <h3>Choisissez votre thématique</h3>
-                        <p>Quel domaine vous intéresse le plus ?</p>
-                        <div class="theme-grid">
-                            <label class="theme-card">
-                                <input type="radio" name="theme" value="sentimental" required>
-                                <div class="theme-content">
-                                    <span class="theme-icon">💕</span>
-                                    <span class="theme-label">Sentimental</span>
-                                </div>
-                            </label>
-                            <label class="theme-card">
-                                <input type="radio" name="theme" value="financier" required>
-                                <div class="theme-content">
-                                    <span class="theme-icon">💰</span>
-                                    <span class="theme-label">Financier</span>
-                                </div>
-                            </label>
-                            <label class="theme-card">
-                                <input type="radio" name="theme" value="familial" required>
-                                <div class="theme-content">
-                                    <span class="theme-icon">👨‍👩‍👧‍👦</span>
-                                    <span class="theme-label">Familial</span>
-                                </div>
-                            </label>
-                            <label class="theme-card">
-                                <input type="radio" name="theme" value="professionnel" required>
-                                <div class="theme-content">
-                                    <span class="theme-icon">💼</span>
-                                    <span class="theme-label">Professionnel</span>
-                                </div>
-                            </label>
-                        </div>
-                        <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
-                    </div>
-                    
-                    <!-- Étape 4: Date de naissance -->
-                    <div class="form-step" data-step="4">
-                        <h3>Votre date de naissance</h3>
-                        <p>Pour établir votre profil astrologique</p>
-                        <div class="form-group">
-                            <input type="date" id="birthdate" name="birthdate" required>
-                            <span class="input-icon">🎂</span>
-                        </div>
-                        <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
-                    </div>
-                    
-                    <!-- Étape 5: Votre question -->
-                    <div class="form-step" data-step="5">
-                        <h3>Votre question</h3>
-                        <p>Posez votre question afin d'obtenir une réponse personnalisée.</p>
-                        <div class="form-group">
-                            <textarea id="question" name="question" placeholder="Posez votre question ici" required></textarea>
-                        </div>
-                        <button type="button" class="form-btn" onclick="nextStep()">Continuer</button>
-                    </div>
+<script>
+  const form = document.getElementById("multiStepForm");
+  const steps = Array.from(form.querySelectorAll(".form-step"));
+  let currentStep = 0;
 
-                    <!-- Étape 6: Téléphone -->
-                    <div class="form-step" data-step="6">
-                        <h3>Votre numéro de téléphone</h3>
-                        <p>Pour tenter de gagner une consultation exclusive avec le Président du Cabinet</p>
-                        <div class="phone-group">
-                            <select id="countryCode" name="countryCode" class="country-select">
-                                <option value="+33" selected>🇫🇷 +33</option>
-                                <option value="+32">🇧🇪 +32</option>
-                                <option value="+41">🇨🇭 +41</option>
-                                <option value="+1">🇺🇸 +1</option>
-                                <option value="+44">🇬🇧 +44</option>
-                            </select>
-                            <div class="form-group phone-input">
-                                <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required>
-                                <span class="input-icon">📞</span>
-                            </div>
-                        </div>
-                        <button type="submit" class="form-btn submit-btn">Activer ma consultation gratuite</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+  function showStep(index) {
+    steps.forEach((step, i) => {
+      step.classList.toggle("active", i === index);
+    });
+  }
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Astro Vrais</h3>
-                    <p>Votre guide spirituel de confiance depuis 2008</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Tarologie</a></li>
-                        <li><a href="#services">Numérologie</a></li>
-                        <li><a href="#services">Astrologie</a></li>
-                        <li><a href="#services">Médiumnité Pure</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="mailto:contact@astrovrais.fr">contact@astrovrais.fr</a></li>
-                        <li><a href="tel:+33123456789">01 23 45 67 89</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+  form.addEventListener("click", (e) => {
+    if (e.target.classList.contains("next-btn")) {
+      if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+      }
+    }
 
-    <script src="script.js"></script>
+    if (e.target.classList.contains("prev-btn")) {
+      if (currentStep > 0) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    }
+  });
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Formulaire envoyé !");
+  });
+</script>
+
 </body>
 </html>
