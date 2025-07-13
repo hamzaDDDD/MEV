@@ -1,6 +1,6 @@
 // Variables globales
 let currentStep = 1;
-const totalSteps = 5;
+const totalSteps = 6;  // Total des étapes mis à jour ici
 let formData = {};
 let currentTestimonialIndex = 0;
 const testimonialsPerView = 3;
@@ -559,4 +559,3 @@ function preloadImages() {
 
 // Lancer le préchargement
 preloadImages();
-
