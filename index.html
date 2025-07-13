@@ -4,109 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Page de consultation spirituelle et ésotérique. Explorez les services de numérologie, tarologie, astrologie, et plus encore.">
-    <title>Page de Consultation Astrologique</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="particles"></div>
-    
-    <!-- Navbar -->
-    <header class="navbar">
+    <div class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h1>Astro Spirit</h1>
+                <h1>AstroVrais</h1>
             </div>
-            <nav class="nav-links">
-                <a href="#">Accueil</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </nav>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#testimonials">Témoignages</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
-            <div class="hero-text">
-                <h1 class="hero-title gradient-text">Découvrez votre avenir</h1>
-                <p class="hero-description">Explorez nos services de numérologie, astrologie, tarologie et médiumnité pour des réponses claires et profondes.</p>
-                <a href="#" class="cta-button primary">Commencez votre consultation</a>
+            <div class="hero-content">
+                <h2 class="hero-title">Explorez votre avenir avec AstroVrais</h2>
+                <p class="hero-description">Découvrez des consultations spirituelles adaptées à vos besoins : numérologie, tarot, astrologie et médiumnité.</p>
+                <a href="#contact" class="cta-button primary">Réservez votre consultation</a>
             </div>
             <div class="hero-image">
-                <img src="pexels_fortune_teller_1.jpg" alt="Consultation de voyance">
+                <img src="pexels_fortune_teller_1.jpg" alt="Consultation spirituelle">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nos Services</h2>
-                <p>Obtenez des consultations personnalisées avec nos experts dans diverses disciplines spirituelles.</p>
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Nos Services</h2>
+            <p>Nous vous offrons des consultations personnalisées dans différentes pratiques spirituelles.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon icon-numerology"></div>
+                <h3>Numérologie</h3>
+                <p>Découvrez votre avenir grâce à la science des nombres.</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon icon-numerology"></div>
-                    <h3>Numérologie</h3>
-                    <p>Découvrez la signification profonde de votre nom et de votre date de naissance.</p>
-                    <div class="service-features">
-                        <span>Précis</span>
-                        <span>Personnalisé</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon icon-tarot"></div>
-                    <h3>Tarot</h3>
-                    <p>Explorez les mystères de votre avenir à travers des cartes ancestrales.</p>
-                    <div class="service-features">
-                        <span>Informatif</span>
-                        <span>Spécifique</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon icon-astrology"></div>
-                    <h3>Astrologie</h3>
-                    <p>Découvrez votre chemin de vie à travers les astres et les planètes.</p>
-                    <div class="service-features">
-                        <span>Éclairant</span>
-                        <span>Profond</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon icon-clairvoyance"></div>
-                    <h3>Médiumnité</h3>
-                    <p>Accédez aux messages du monde spirituel pour guider votre vie.</p>
-                    <div class="service-features">
-                        <span>Précis</span>
-                        <span>Spirituel</span>
-                    </div>
-                </div>
+            <div class="service-card">
+                <div class="service-icon icon-tarot"></div>
+                <h3>Tarot</h3>
+                <p>Des consultations détaillées avec nos cartes de tarot.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon icon-astrology"></div>
+                <h3>Astrologie</h3>
+                <p>Votre carte du ciel vous révèlera des secrets précieux.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon icon-clairvoyance"></div>
+                <h3>Médiumnité</h3>
+                <p>Des réponses aux questions les plus profondes de votre vie.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <h2>Ce que disent nos clients</h2>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial-card">
+                <p>"Une expérience incroyable, j'ai trouvé des réponses à toutes mes questions!"</p>
+                <div class="testimonial-author">
+                    <img src="testimonial_1.jpg" alt="Client 1">
+                    <div>
+                        <h4>Marie L.</h4>
+                        <span>Client satisfait</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Le tarot m'a guidé de manière surprenante et précise. Je recommande vivement!"</p>
+                <div class="testimonial-author">
+                    <img src="testimonial_2.jpg" alt="Client 2">
+                    <div>
+                        <h4>Jean P.</h4>
+                        <span>Client satisfait</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres témoignages ici -->
+        </div>
+    </section>
+
+    <section id="contact" class="consultation">
+        <div class="section-header">
+            <h2>Contactez-nous</h2>
+            <p>Réservez votre consultation dès aujourd'hui!</p>
+        </div>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="form-btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Astro Spirit</h3>
-                <p>Votre guide dans le monde spirituel et ésotérique.</p>
+                <h3>AstroVrais</h3>
+                <p>Explorez l'avenir avec nos experts.</p>
             </div>
             <div class="footer-section">
-                <h4>Suivez-nous</h4>
+                <h4>Liens</h4>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="#">Email</a></li>
-                    <li><a href="#">Téléphone</a></li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
