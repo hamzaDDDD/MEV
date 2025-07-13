@@ -72,7 +72,7 @@ function nextStep() {
                 currentStepElement.classList.remove('active');
             }
             
-            // Mettre à jour le numéro d'étape
+            // Passer à l'étape suivante
             currentStep++;
             
             // Afficher la nouvelle étape
@@ -99,6 +99,7 @@ function validateCurrentStep() {
     let isValid = true;
     
     requiredInputs.forEach(input => {
+        console.log(input.value); // Vérifier ce qui est saisi
         if (input.type === 'radio') {
             const radioGroup = currentStepElement.querySelectorAll(`input[name="${input.name}"]`);
             const isRadioGroupValid = Array.from(radioGroup).some(radio => radio.checked);
@@ -252,11 +253,6 @@ function submitFormData() {
         
         // Envoyer les données (simulation)
         console.log('Données du formulaire:', formData);
-        
-        // Ici, vous pourriez intégrer avec un service comme Zapier, Google Sheets, etc.
-        // sendToZapier(formData);
-        // sendToGoogleSheets(formData);
-        
     }, 2000);
 }
 
